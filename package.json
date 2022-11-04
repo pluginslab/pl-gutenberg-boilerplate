@@ -1,45 +1,45 @@
 {
-	"name": "pl-woocommerce-blocks-example",
-	"title": "Pluginslab WooCommerce Blocks Example Plugin 2022",
-	"version": "0.2.0",
-	"description": "This is a demo plugin to exemplify how WooCommerce Blocks cart and checkout blocks can be implemented and adopted.",
-	"license": "GPL-3.0+",
-	"homepage": "https://github.com/pluginslab/pl-woocommerce-blocks-example",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/pluginslab/pl-woocommerce-blocks-example.git"
-	},
-	"devDependencies": {
-		"@woocommerce/dependency-extraction-webpack-plugin": "^1.7.0",
-		"@woocommerce/eslint-plugin": "^1.1.0",
-		"@wordpress/prettier-config": "^1.0.3",
-		"@wordpress/scripts": "^15.0.1",
-		"@wordpress/stylelint-config": "^19.0.3",
-		"node-wp-i18n": "~1.2.3",
-		"prettier": "npm:wp-prettier@^2.2.1-beta-1",
-		"uglify-js": "^3.6.0"
-	},
-	"scripts": {
-		"build": "wp-scripts build",
-		"lint:css": "wp-scripts lint-style",
-		"lint:js": "wp-scripts lint-js",
-		"start": "wp-scripts start"
-	},
-	"engines": {
-		"node": ">=8.9.3",
-		"npm": ">=5.5.1"
-	},
-	"dependencies": {
-		"@wordpress/a11y": "^3.2.4",
-		"@wordpress/api-fetch": "^5.2.6",
-		"@wordpress/block-editor": "^8.0.5",
-		"@wordpress/blocks": "^11.2.1",
-		"@wordpress/components": "^19.0.5",
-		"@wordpress/data": "^6.1.4",
-		"@wordpress/element": "^4.0.4",
-		"@wordpress/html-entities": "^3.3.1",
-		"@wordpress/i18n": "^4.2.4",
-		"@wordpress/icons": "^6.1.1",
-		"@wordpress/url": "^3.3.1"
-	}
+    "name": "pl-gutenberg-boilerplate",
+    "title": "Pluginslab Gutenberg Boilerplate Example Plugin 2022",
+    "version": "0.2.0",
+    "description": "This is a demo plugin to exemplify how WooCommerce Blocks cart and checkout blocks can be implemented and adopted.",
+    "license": "GPL-3.0+",
+    "homepage": "https://github.com/pluginslab/pl-gutenberg-boilerplate",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pluginslab/pl-gutenberg-boilerplate.git"
+    },
+    "devDependencies": {
+        "@woocommerce/dependency-extraction-webpack-plugin": "^1.7.0",
+        "@woocommerce/eslint-plugin": "^1.1.0",
+        "@wordpress/prettier-config": "^1.0.3",
+        "@wordpress/scripts": "^15.0.1",
+        "@wordpress/stylelint-config": "^19.0.3",
+        "node-wp-i18n": "~1.2.3",
+        "prettier": "npm:wp-prettier@^2.2.1-beta-1",
+        "uglify-js": "^3.6.0"
+    },
+    "scripts": {
+        "build": "wp-scripts build",
+        "lint:css": "wp-scripts lint-style",
+        "lint:js": "wp-scripts lint-js",
+        "start": "wp-scripts start"
+    },
+    "engines": {
+        "node": ">=8.9.3",
+        "npm": ">=5.5.1"
+    },
+    "dependencies": {
+        "@wordpress/a11y": "^3.2.4",
+        "@wordpress/api-fetch": "^5.2.6",
+        "@wordpress/block-editor": "^8.0.5",
+        "@wordpress/blocks": "^11.2.1",
+        "@wordpress/components": "^19.0.5",
+        "@wordpress/data": "^6.1.4",
+        "@wordpress/element": "^4.0.4",
+        "@wordpress/html-entities": "^3.3.1",
+        "@wordpress/i18n": "^4.2.4",
+        "@wordpress/icons": "^6.1.1",
+        "@wordpress/url": "^3.3.1"
+    }
 }

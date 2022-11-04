@@ -1,0 +1,16 @@
+{
+	"apiVersion": 2,
+	"name": "pluginslab/woocommerce-blocks-example",
+	"version": "0.2.0",
+	"title": "Blocks Example 2022",
+	"category": "woocommerce",
+	"icon": "cart",
+	"description": "This is the block version of our example plugin.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "pl-woocommerce-blocks-example",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/index.css"
+}

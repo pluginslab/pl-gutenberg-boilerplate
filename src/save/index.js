@@ -7,6 +7,7 @@ const Save = (props) => {
     const { className } = props.attributes;
     return (
         <div
+            data-attributes={props.attributes}
             className={classNames(
                 "pl-frontend-blocks-example-wrapper",
                 className

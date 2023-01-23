@@ -2,9 +2,9 @@
     "apiVersion": 2,
     "name": "pluginslab/pl-gutenberg-boilerplate",
     "version": "0.2.0",
-    "title": "Blocks Example 2022",
-    "category": "woocommerce",
-    "icon": "cart",
+    "title": "Blocks Example 2023",
+    "category": "text",
+    "icon": "text",
     "description": "This is the block version of our example plugin.",
     "supports": {
         "html": false

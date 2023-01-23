@@ -1,6 +1,6 @@
 {
-    "name": "pluginslab/woocommerce-blocks-example",
-    "description": "This is a demo plugin to exemplify how WooCommerce Blocks cart and checkout blocks can be implemented and adopted.",
+    "name": "pluginslab/pl-gutenberg-boilerplate",
+    "description": "This is a demo plugin to exemplify how blocks can be implemented and adopted.",
     "homepage": "https://github.com/pluginslab/pl-gutenberg-boilerplate",
     "type": "wordpress-plugin",
     "license": "GPL-2.0+",
@@ -12,7 +12,6 @@
         ]
     },
     "require-dev": {
-        "woocommerce/woocommerce-sniffs": "^0.1.2",
         "squizlabs/php_codesniffer": "^3.6"
     },
     "config": {

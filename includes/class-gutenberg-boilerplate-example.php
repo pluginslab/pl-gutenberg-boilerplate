@@ -44,7 +44,7 @@ class Gutenberg_Boilerplate_Example {
 		$asset_file_frontend = include plugin_dir_path( __FILE__ ) . '../build/frontend.asset.php';
 		wp_enqueue_script(
 			'pl-frontend-blocks-example',
-			PL_GUETENBERG_BOILERPLATE_EXAMPLE_PLUGIN_URL . 'build/frontend.js',
+			PL_GUTENBERG_BOILERPLATE_EXAMPLE_PLUGIN_URL . 'build/frontend.js',
 			$asset_file_frontend['dependencies'],
 			$asset_file_frontend['version'],
 			false

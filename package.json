@@ -1,8 +1,8 @@
 {
     "name": "pl-gutenberg-boilerplate",
-    "title": "Pluginslab Gutenberg Boilerplate Example Plugin 2022",
+    "title": "Pluginslab Gutenberg Boilerplate Example Plugin 2023",
     "version": "0.2.0",
-    "description": "This is a demo plugin to exemplify how WooCommerce Blocks cart and checkout blocks can be implemented and adopted.",
+    "description": "his is a demo plugin to exemplify how blocks can be implemented and adopted.",
     "license": "GPL-3.0+",
     "homepage": "https://github.com/pluginslab/pl-gutenberg-boilerplate",
     "repository": {

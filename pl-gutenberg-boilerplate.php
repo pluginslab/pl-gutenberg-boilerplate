@@ -26,7 +26,7 @@ function pl_gutenberg_boilerplate_example_init() {
 
 	load_plugin_textdomain( 'pl-gutenberg-boilerplate', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
-	define( 'PL_GUETENBERG_BOILERPLATE_EXAMPLE_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
+	define( 'PL_GUTENBERG_BOILERPLATE_EXAMPLE_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
 	require_once 'includes/class-gutenberg-boilerplate-example.php';
 	new Pluginslab\Gutenberg_Boilerplate_Example();

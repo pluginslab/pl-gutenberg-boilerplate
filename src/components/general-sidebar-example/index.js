@@ -4,10 +4,10 @@ import { Button } from "@wordpress/components";
 export default function Sidebar() {
     return (
         <PluginDocumentSettingPanel
-            title="My Plugin Settings"
-            initialOpen="true"
+            title='My Plugin Settings'
+            initialOpen='true'
         >
-            <Button isPrimary>Click Me</Button>
+            <Button>Click Me</Button>
         </PluginDocumentSettingPanel>
     );
 }

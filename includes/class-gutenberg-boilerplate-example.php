@@ -15,8 +15,6 @@ class Gutenberg_Boilerplate_Example {
 	public function __construct() {
 		add_action( 'init', array( $this, 'register_block' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
-		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) );
-
 	}
 
 	/**
@@ -45,8 +43,8 @@ class Gutenberg_Boilerplate_Example {
 		 */
 		$asset_file_frontend = include plugin_dir_path( __FILE__ ) . '../build/frontend.asset.php';
 		wp_enqueue_script(
-			'wc-blocks-cart-addons-scripts-frontend',
-			plugins_url( '../build/frontend.js', __FILE__ ),
+			'pl-frontend-blocks-example',
+			PL_GUETENBERG_BOILERPLATE_EXAMPLE_PLUGIN_URL . 'build/frontend.js',
 			$asset_file_frontend['dependencies'],
 			$asset_file_frontend['version'],
 			false

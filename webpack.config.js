@@ -1,5 +1,5 @@
 const defaultConfig = require("@wordpress/scripts/config/webpack.config");
-const WooCommerceDependencyExtractionWebpackPlugin = require("@woocommerce/dependency-extraction-webpack-plugin");
+const WordPressDependencyExtractionWebpackPlugin = require("@wordpress/dependency-extraction-webpack-plugin");
 
 module.exports = {
     ...defaultConfig,
@@ -15,7 +15,7 @@ module.exports = {
             (plugin) =>
                 plugin.constructor.name !== "DependencyExtractionWebpackPlugin"
         ),
-        new WooCommerceDependencyExtractionWebpackPlugin({}),
+        new WordPressDependencyExtractionWebpackPlugin({}),
     ],
     resolve: {
         extensions: [".js", ".jsx", ".ts", ".tsx"],

@@ -12,10 +12,10 @@ import FrontendExample from "../components/frontend-example";
 const Edit = (props) => {
     return (
         <div {...useBlockProps()}>
-            <InspectorControls key="setting">
-                <PanelBody title="Frontend Example" initialOpen={true}>
+            <InspectorControls key='setting'>
+                <PanelBody title='Frontend Example' initialOpen={true}>
                     <PanelRow>
-                        <Button isPrimary>Click Me</Button>
+                        <Button>Click Me</Button>
                     </PanelRow>
                 </PanelBody>
             </InspectorControls>

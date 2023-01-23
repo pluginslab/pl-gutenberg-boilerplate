@@ -19,6 +19,6 @@ registerBlockType(block, {
 
 registerPlugin("pl-gutenberg-boilerplate", {
     render() {
-        return <Sidebar />;
+        return <Fields />;
     },
 });

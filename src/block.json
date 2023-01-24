@@ -1,17 +1,27 @@
 {
-    "$schema": "https://schemas.wp.org/trunk/block.json",
-    "apiVersion": 2,
-    "name": "pluginslab/pl-gutenberg-boilerplate",
-    "version": "0.3.0",
-    "title": "Blocks Example 2023",
-    "category": "text",
-    "icon": "text",
-    "description": "This is the block version of our example plugin.",
-    "supports": {
-        "html": false
-    },
-    "textdomain": "pl-gutenberg-boilerplate",
-    "editorScript": "file:./index.js",
-    "editorStyle": "file:./index.css",
-    "style": "file:./style-index.css"
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "pluginslab/pl-gutenberg-boilerplate",
+	"version": "0.3.0",
+	"title": "Blocks Example 2023",
+	"category": "text",
+	"icon": "text",
+	"description": "This is the block version of our example plugin.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"perPage": {
+			"type": "number"
+		}
+	},
+	"example": {
+		"attributes": {
+			"perPage": "3"
+		}
+	},
+	"textdomain": "pl-gutenberg-boilerplate",
+	"editorScript": ["file:./index.js", "file:./frontend.js"],
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
 }

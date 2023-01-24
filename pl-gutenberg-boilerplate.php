@@ -28,3 +28,41 @@ function register_block() {
 }
 
 add_action( 'init', 'register_block' );
+
+/**
+ * Enqueue assets for this example.
+ *
+ * @param string $hook The current admin page.
+ */
+function load_custom_scripts( $hook ) {
+
+	// Load the required WordPress packages.
+
+	// Automatically load dependencies and version.
+	$asset_file = include plugin_dir_path( __FILE__ ) . 'build/frontend.asset.php';
+
+	// Enqueue CSS dependencies.
+	foreach ( $asset_file['dependencies'] as $style ) {
+		wp_enqueue_style( $style );
+	}
+
+	// Load our app.js.
+	wp_register_script(
+		'frontend',
+		plugins_url( 'build/frontend.js', __FILE__ ),
+		$asset_file['dependencies'],
+		$asset_file['version'],
+		true,
+	);
+	wp_enqueue_script( 'frontend' );
+
+	// Load our style.css.
+	wp_register_style(
+		'frontend',
+		plugins_url( 'style.css', __FILE__ ),
+		null,
+		$asset_file['version'],
+	);
+	wp_enqueue_style( 'frontend' );
+}
+add_action( 'wp_enqueue_scripts', 'load_custom_scripts' );

@@ -7,18 +7,17 @@ import { useBlockProps } from "@wordpress/block-editor";
 /**
  * Internal dependencies
  */
-import FrontendExample from "../components/frontend-example";
 import "../style.scss";
 
 const Save = (props) => {
 	const { className } = props.attributes;
+	const { perPage = 5 } = props.attributes;
 	return (
 		<div
+			data-per-page={perPage}
 			{...useBlockProps.save()}
 			className={classNames("pl-frontend-blocks-example-wrapper", className)}
-		>
-			<FrontendExample />
-		</div>
+		></div>
 	);
 };
 

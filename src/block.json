@@ -1,7 +1,8 @@
 {
+    "$schema": "https://schemas.wp.org/trunk/block.json",
     "apiVersion": 2,
     "name": "pluginslab/pl-gutenberg-boilerplate",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "title": "Blocks Example 2023",
     "category": "text",
     "icon": "text",
@@ -10,7 +11,7 @@
         "html": false
     },
     "textdomain": "pl-gutenberg-boilerplate",
-    "editorScript": "file:./build/index.js",
-    "editorStyle": "file:./build/index.css",
-    "style": "file:./build/index.css"
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./index.css",
+    "style": "file:./style-index.css"
 }

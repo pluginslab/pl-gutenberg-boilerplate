@@ -9,16 +9,16 @@ import { registerPlugin } from "@wordpress/plugins";
  */
 import Edit from "./edit";
 import Save from "./save";
-import block from "../block.json";
+import metadata from "./block.json";
 import Fields from "./components/general-sidebar-example";
 
-registerBlockType(block, {
-    edit: Edit,
-    save: Save,
+registerBlockType(metadata.name, {
+	edit: Edit,
+	save: Save,
 });
 
 registerPlugin("pl-gutenberg-boilerplate", {
-    render() {
-        return <Fields />;
-    },
+	render() {
+		return <Fields />;
+	},
 });

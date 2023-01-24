@@ -1,5 +1,3 @@
-import "../../index.css";
-
 const FrontendExample = (props) => {
     const { isEditing } = props;
 

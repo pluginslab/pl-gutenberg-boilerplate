@@ -8,6 +8,7 @@ import { Button, PanelRow, PanelBody } from "@wordpress/components";
  * Internal dependencies
  */
 import FrontendExample from "../components/frontend-example";
+import "../editor.scss";
 
 const Edit = (props) => {
     return (

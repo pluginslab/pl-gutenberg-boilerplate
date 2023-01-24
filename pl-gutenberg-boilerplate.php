@@ -14,21 +14,17 @@
 
 defined( 'ABSPATH' ) || exit;
 
-use \Pluginslab\PL_Gutenberg_Boilerplate_Example;
-
-// Plugin init hook.
-add_action( 'plugins_loaded', 'pl_gutenberg_boilerplate_example_init' );
 
 /**
- * Initialize plugin.
+ * Registers the block using the metadata loaded from the `block.json` file.
+ * Behind the scenes, it registers also all assets so they can be enqueued
+ * through the block editor in the corresponding context.
+ *
+ * @return void
+ * @see https://developer.wordpress.org/block-editor/tutorials/block-tutorial/writing-your-first-block-type/
  */
-function pl_gutenberg_boilerplate_example_init() {
-
-	load_plugin_textdomain( 'pl-gutenberg-boilerplate', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
-
-	define( 'PL_GUTENBERG_BOILERPLATE_EXAMPLE_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
-
-	require_once 'includes/class-gutenberg-boilerplate-example.php';
-	new Pluginslab\Gutenberg_Boilerplate_Example();
-
+function register_block() {
+	register_block_type( __DIR__ . '/build' );
 }
+
+add_action( 'init', 'register_block' );

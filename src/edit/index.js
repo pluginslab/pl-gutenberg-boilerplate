@@ -1,13 +1,11 @@
 /**
  * External dependencies
  */
-import { useBlockProps, InspectorControls } from "@wordpress/block-editor";
-import { Button, PanelRow, PanelBody } from "@wordpress/components";
+import { useBlockProps } from "@wordpress/block-editor";
 
 /**
  * Internal dependencies
  */
-import FrontendExample from "../components/frontend-example";
 import "../editor.scss";
 
 const Edit = (props) => {

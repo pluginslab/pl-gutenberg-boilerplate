@@ -7,7 +7,6 @@ import { useBlockProps } from "@wordpress/block-editor";
 /**
  * Internal dependencies
  */
-import FrontendExample from "../components/frontend-example";
 import "../style.scss";
 
 const Save = (props) => {
@@ -17,7 +16,7 @@ const Save = (props) => {
 			{...useBlockProps.save()}
 			className={classNames("pl-frontend-blocks-example-wrapper", className)}
 		>
-			<FrontendExample />
+			<p>I've been saved.</p>
 		</div>
 	);
 };

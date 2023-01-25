@@ -3,7 +3,7 @@
  */
 import { SearchControl, TextControl } from "@wordpress/components";
 import { useBlockProps, InspectorControls } from "@wordpress/block-editor";
-import { Button, PanelRow, PanelBody } from "@wordpress/components";
+import { PanelBody } from "@wordpress/components";
 
 /**
  * Internal dependencies

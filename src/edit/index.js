@@ -2,7 +2,6 @@
  * External dependencies
  */
 import { useBlockProps } from "@wordpress/block-editor";
-import { TextControl } from "@wordpress/components";
 
 /**
  * Internal dependencies
@@ -10,11 +9,7 @@ import { TextControl } from "@wordpress/components";
 import "../editor.scss";
 
 const Edit = (props) => {
-	return (
-		<div {...useBlockProps()}>
-			<TextControl />
-		</div>
-	);
+	return <div {...useBlockProps()}>I'm editing.</div>;
 };
 
 export default Edit;
